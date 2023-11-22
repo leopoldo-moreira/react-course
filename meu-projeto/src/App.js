@@ -1,5 +1,6 @@
 import './App.css';
 import Frase from './components/Frase';
+import List from './components/List';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 
     <div className="App"> 
      <Frase/>     
+     <List/>
     </div>
     
   )

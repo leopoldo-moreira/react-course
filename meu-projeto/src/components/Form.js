@@ -1,3 +1,5 @@
+
+
 function Form() {
 
     function cadastrarUsuario(e){
@@ -12,7 +14,22 @@ function Form() {
             <h1>Meu cadastro:</h1>
             <form onSubmit={cadastrarUsuario}>
                 <div>
-                    <input type='text' placeolder='Digite seu nome'/>                    
+                    <label htmlFor='name'>Nome:</label>
+                    <input 
+                        type='text'
+                        id='name' 
+                        name='name' 
+                        placeholder='Digite seu nome'
+                    />                    
+                </div>
+                <div>
+                    <label htmlFor='password'>Senha:</label>
+                    <input
+                        type='password'
+                        name='password'
+                        id='password'
+                        placeholder='Digite sua senha'
+                     />
                 </div>
                 <div>
                     <input type='submit' value='cadastrar'/>

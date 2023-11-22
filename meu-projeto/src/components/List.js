@@ -6,11 +6,12 @@ function List(){
         <>
             <h1>Minha Lista</h1>
             <ul>
-                <Item marca= 'Ferrari'/>
-                <Item marca= 'Fiat'/>
+                <Item marca= 'Ferrari' anoLancamento={1992}/>
+                <Item/>
             </ul>
         </>
     )
 }
+
 
 export default List;

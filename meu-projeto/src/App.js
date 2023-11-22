@@ -1,16 +1,12 @@
 import './App.css';
-import Frase from './components/Frase';
-import List from './components/List';
+import Form from './components/Form';
 
 
 function App() {
-  
-  
   return (
 
     <div className="App"> 
-     <Frase/>     
-     <List/>
+      <Form/>
     </div>
     
   )

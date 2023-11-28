@@ -1,14 +1,16 @@
 import './App.css';
-import Condicional from './components/Condicional'
+import Lista from './components/Lista'
 
 
 function App() { 
 
+  const pets = ['Tony','Bruce','Nick']
 
   return (
     <div className="App"> 
-      <h1>Renderização Condicional</h1>
-      <Condicional/>
+      <h1>Renderização de Listas</h1> 
+      <Lista pets={pets}/>   
+      <Lista pets={[]}/>        
     </div>    
   )
 }

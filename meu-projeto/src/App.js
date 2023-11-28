@@ -1,16 +1,18 @@
-import './App.css';
-import Lista from './components/Lista'
+import {useState} from 'react'
+import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao'
 
+
+import './App.css';
 
 function App() { 
-
-  const pets = ['Tony','Bruce','Nick']
+  const [name, setName] = useState();
 
   return (
     <div className="App"> 
-      <h1>Renderização de Listas</h1> 
-      <Lista pets={pets}/>   
-      <Lista pets={[]}/>        
+      <h1>Lift State</h1> 
+      <SeuNome setName={setName}/>
+      <Saudacao nome={name} idade='3' time='corinthians' />      
     </div>    
   )
 }

@@ -1,0 +1,18 @@
+.list{
+    list-style: none;
+    display: flex;
+}
+
+.item{
+    margin-right: 1em;
+}
+
+.item svg{
+    color: blue;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+footer{
+    border: 1px solid red;
+}
